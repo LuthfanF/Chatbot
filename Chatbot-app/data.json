@@ -1,0 +1,148 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Apa Kabar?", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, Terima kasih mau bertanya. Saya dapat memandu Anda seputar informasi Persistelan, atau seputar kuliah. Seperti : 1. Prospek Kerja Sistem Telekomunikasi, 2. Mata Kuliah, 3. UKT, 4. Fasilitas Kampus, dan 5. Magang, 6. Hima, 7. Akreditasi, 8. Lulusan, 9. Visi dan Misi, 10. Dosen Sistel, 11. Pengabdian kepada Masyarakat, 12. Kerja Sama"],
+         "context": ["sapaan kepada pengguna"]
+        },
+        {"tag": "sistel_info",
+         "patterns": ["1. Prospek Kerja", "Prospek kerja sistem telekomunikasi", "prospek", "1"],
+         "responses": ["Banyak tauu!!, Kalian bisa menjadi Network Engineer, Network Programmer, Trainer/Educator, Wireless Engineer, IT Consultant, Researcher, Technopreneur, Project Manager, Network Adminstrator, DLL. Yang penting dan yang harus kalian lakukan jangan terlalu kaku, dan belajar serta semangat kuliahh!!!"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["thanks", "makasi", "thank you", "terima kasih", "Thkeren"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Maaf, aku tidak mengerti. Bisa diulang?", "Kasih saya pertanyaan dengan jelas", "Aku tidak yakin untuk mengerti apa maksudmu"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["Apa yang bisa dibantu?", "Apa yang bisa kamu lakukan?", "Bantuan apa yang Anda berikan?", "Bagaimana Anda bisa membantu?", "Dukungan apa yang ditawarkan?"],
+         "responses": ["Saya dapat memandu Anda seputar informasi Persistelan, atau seputar kuliah. Seperti : 1. Prospek Kerja Sistem Telekomunikasi, 2. Mata Kuliah, 3. UKT, 4. Fasilitas Kampus 5. Magang"],
+         "context": [""]
+        },
+        {"tag": "sistel_info",
+         "patterns": ["Prospek kerja sistem telekomunikasi"],
+         "responses": ["Banyak tauu!!, Kalian bisa menjadi Network Engineer, Network Programmer, Trainer/Educator, Wireless Engineer, IT Consultant, Researcher, Technopreneur, Project Manager, Network Adminstrator, DLL. Yang penting dan yang harus kalian lakukan jangan terlalu kaku, dan belajar serta semangat kuliahh!!!"],
+         "context": [""]
+        },
+        {"tag": "mata_kuliah",
+         "patterns": ["Mata kuliah", "matkul", "mata kuliah sistel", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["IoT, dll"],
+         "context": [""]
+        },
+        {"tag": "ukt",
+         "patterns": ["ukt", "biaya"],
+         "responses": ["Hi Informasi seputar UKT, kamu bisa check disini yaa https://pmb.upi.edu/"],
+         "context": ["checkin_ukt"] 
+        },
+        {"tag": "fasilitas_kampus",
+         "patterns": ["fasilitas seperti apa yang diberikan dikampus?", "Fasilitas"],
+         "responses": ["Banyak"],
+         "context": [""]
+        },
+        {"tag": "magang",
+         "patterns": ["magang" ],
+         "responses": ["Pertanyaan bagus nih buat yang mau magang, di Prodi Sistem Telekomunikasi kalian bisa ikut Program Magang Kampus Merdeka atau MBKM, Dan ada opsi yang lainnya juga lohh. Yaitu magang mandiri tapi diluar kampus merdeka, Next untuk : Kampus Merdeka, atau Magang mandiri"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "kampus_merdeka",
+         "patterns": ["kampus merdeka", "Kampus merdeka", "mbkm"],
+         "responses": ["Kampus Merdeka adalah salah satu bagian kebijakan Merdeka Belajar yang dicanangkan oleh Menteri Pendidikan, Kebudayaan, Riset dan Teknologi, Nadiem Makariem. Kebijakan tersebut memberikan kesempatan bagi mahasiswa untuk mengasah kemampuannya sesuai dengan minat dan bakat masing-masing, Kamu bisa check disini untuk daftar https://kampusmerdeka.kemdikbud.go.id/"],
+         "context": ["kampus_merdeka_info"]
+        },
+        {"tag": "magang_mandiri",
+         "patterns": ["magang mandiri ", "mandiri" ],
+         "responses": ["Magang mandiri atau magang sendiri artinya mahasiswa akan mencari tempat magangnya sendiri dengan mendaftarkan diri ke berbagai instansi atau perusahaan tempat mereka ingin magang. Dalam hal ini, biasanya dibutuhkan skill yang baik dan yang sesuai dengan yang dibutuhkan oleh perusahaan tersebut. Magang mandiri dapat memberikan peluang berharga bagi individu untuk memperoleh pengalaman kerja praktis, memperluas jaringan profesional, dan mendapatkan wawasan tentang industri atau bidang tertentu. Ini juga menunjukkan inisiatif, motivasi, dan kemampuan seseorang untuk mengatur sendiri peluang belajar dan pengembangan diri"],
+         "context": ["magang_mandiri_info"]
+        },
+        {"tag": "info_hima",
+         "patterns": ["hima, himpunan","hmst", "Hima"],
+         "responses": ["Follow akun Himpunan Mahasiswa Sistem Telekomunikasi ya di Instagram @hmst_"],
+         "context": [""]
+        },
+        {"tag": "akreditasi",
+         "patterns": ["Akreditasi" ,"akreditasi", "akred", "penilaian", "sistel akreditasi", "akreditasi sistel"],
+         "responses": ["Jurusan Sistem Telekomunikasi berakreditasi Baik yaa"],
+         "context": [""]
+        },
+        {"tag": "lulusan",
+         "patterns": ["lulusan"],
+         "responses": ["Sistem Telekomunikasi belum mempunyai lulusan"],
+         "context": [""]
+        },
+        {"tag": "visi_misi",
+         "patterns": ["visi misi", "Visi dan Misi"],
+         "responses": ["Visi dan Misi prodi sistem telekomunikasi adalah"],
+         "context": [""]
+        },
+        {"tag": "dosen",
+         "patterns": ["dosen", "dosen sistel", "sistel_dosen"],
+         "responses": ["Dosen sistel memiliki"],
+         "context": [""]
+        },
+        {"tag": "pengabdian_masyarakat",
+         "patterns": ["Pengabdian masyarakat", "pengabdian", "masyarakart", "pengabdian masyarakat"],
+         "responses": ["pengabdian masyarakat yang telah dilakukan dari prodi sistel adalah"],
+         "context": [""]
+        },
+        {"tag": "kerja_sama",
+         "patterns": ["kerja sama", "Kerja sama", "prodi kerjasama", "kerjasama", "Kerjasama", "samakerja", "Samakerja"],
+         "responses": ["kerjasama yang dilakukan prodi adalah"],
+         "context": [""]
+        },
+        {"tag": "saran_laptop",
+        "patterns": ["laptop","Saran laptop", "device", "device apa", "laptop apa yang harus digunakan"],
+        "responses": ["Kamu bisa menggunakan laptop minimum Intel Core i5 yaa diusahakan generasi terbaru karena untuk menunjang kuliah kamu juga"],
+        "context": [""]
+       },
+       {"tag": "ormawa_kom",
+       "patterns": ["organisasi mahasiswa", "ormawa", "ormawa kampus", "kegiatan kampus, ormawa upi"],
+       "responses": ["Kamu bisa mengikuti kegiatan ormawa diluar setelah kamu selesai dari pelajaran matkul yaa, Jangan bolos!"],
+       "context": [""]
+       },
+       {"tag": "sistel_2019",
+       "patterns": ["Sistem telekomunikasi angkatan 2019", "sistel 19", "Sistel 2019", "2019"],
+       "responses": ["Sistem telekomunikasi angkatan 2019, Memiliki 1 Kelas saja nih. Ada sekitar 37 Mahasiswa dikelasnya, kalian kenal siapa saja?"],
+       "context": [""]
+       },
+       {"tag": "sistel_2020",
+       "patterns": ["Sistem Telekomunikasi angkatan 2020", "sistel 20", "sistel 2020", "2020"],
+       "responses": ["Sistem telekomunikasi angkatan 2020, Memiliki 2 Kelas"],
+       "context": [""]
+       },
+       {"tag": "sistel_2021",
+       "patterns": ["Sistem Telekomunikasi angkatan 2021", "sistel 21", "sistel 2021", "2021"],
+       "responses": ["Sistem telekomunikasi angkatan 2021, Memiliki 2 Kelas juga"],
+       "context": [""]
+       },
+       {"tag": "sistel 2022",
+       "patterns": ["Sistem Telekomunikasi angkatan 2022", "sistel 2022", "sistel 2022", "2022"],
+       "responses": ["Sistem telekomunikasi angkatan 2022, Memiliki 2 Kelas juga. Dan angkatan ini tergolong baru lhooo, atau bisa disebut Mahasiswa baru a.k.a MABA"],
+       "context": [""]
+       },
+       {"tag": "semester",
+       "patterns": ["persemester berapa bulan?", "semester"],
+       "responses": ["Persemester bisa kisaran 3-4 Bulan yaa sobat BotTel!"],
+       "context": [""]
+       },
+       {"tag": "Mohammad Luthfan Faohan",
+       "patterns": ["Mohammad Luthfan Faohan", "Luthfan", "luthfan","faohan"],
+       "responses": ["Angkatan 2019, yang membuat penelitian Chatbot ini untuk pengembangan web prodi Sistel"],
+       "context": [""]
+       },
+       {"tag": "ICHWAN NUL ICHSAN, S.T., M.T.",
+       "patterns": ["ICHWAN NUL ICHSAN, S.T. M.T." , "ichwan", "pak ichwan"],
+       "responses": ["ICHWAN NUL ICHSAN, S.T., M.T. adalah"],
+       "context": [""]
+       },
+       {"tag": "GALURA MUHAMMAD SURANEGARA, S.Pd., M.T.",
+       "patterns": ["GALURA MUHAMMAD SURANEGARA, S.Pd.,M.T.", "galura", "pak galura"],
+       "responses": ["GALURA MUHAMMAD SURANEGARA, S.Pd., M.T. adalah"],
+       "context": [""]
+        }
+   ]
+}
